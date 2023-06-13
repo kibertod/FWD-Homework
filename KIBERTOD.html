@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> CyberToad </title>
+	<link rel="stylesheet" type="text/css" href="KIBERTOD.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<style>
+	@font-face {
+    font-family: gotham;
+    src: url("font.ttf");
+   }
+@font-face {
+    font-family: one;
+    src: url("1.ttf");
+   }
+@font-face {
+    font-family: two;
+    src: url("2.ttf");
+   }
+@font-face {
+    font-family: three;
+    src: url("3.ttf");
+   }
+</style>
+<body>
+	<div id="header">
+		<h1 id="logo"><span id="cyber">Cyber</span><span id="toad">Toad</span>
+<!--			<div class="headerBtn">Мои проекты</div>-->
+<!--			<div class="headerBtn active">Главная</div>-->
+		</h1>
+	</div>
+	<div class='logoSlide' id="whiteSlide" style="background-color: #000; top:0; width: 100%;"><h1>Cybertoad</h1></div>
+	<div class='logoSlide' id="greenSlide"><h1>Cybertoad</h1></div>
+	<div class='logoSlide' id="graySlide"><h1>Cyber</h1></div>
+	<div class="page">
+		<div id="mainpageText">
+			<div class="menuPanel">
+				<span class="menuBtn menuBtn-active" id="helloBtn" onclick="showText('hello')">About me</span>
+				<span class="menuBtn" id="technologiesBtn" onclick="showText('technologies')">Technologies</span>
+			</div>
+			<div id="hello" class="text text-active" style="display: block;">
+				<h1 align="center"  class='highlight'>Hello</h1>
+				<h3>
+					My name is Timur Garifullin, I'm a <span class='highlight'>backend developer</span>.
+					I Develop <span class='highlight'>web sites</span>, <span class='highlight'>bots</span> for social networks,
+					<span class="highlight">parsers</span> and various applied <span class="highlight">scripts</span>.
+				</h3>
+			</div>
+			<div class="text" id="technologies">
+				<h1 align="center"  class='highlight'>Technologies</h1>
+				<h3>My primary programming language is <span class='highlight'>C#</span>,
+					I use it to develop most of my projects.<p>
+					For backend I usually use C# web framework,
+					named <span class='highlight'>ASP.NET Core</span>,
+					which allows me to create high performance secure applications of any level difficulty.
+					But if your main priority is fast development and deploying, I can use
+					python with <span class='highlight'>flask or django</span> frameworks
+					which will significantly decrease time of development sacrificing performance.
+					Nevertheless, as an experienced backend developer, I can use any technological stack you require.
+					<p>Also, if you don't want to employ a frontend developer, I can create simple UI using
+					<span class='highlight'>html</span>/<span class='highlight'>css</span>/<span class='highlight'>vue.js</span>.</h3>
+			</div>
+			<div id="projects" class="text">
+				<h1 align="center"  class='highlight'>My projects</h1>
+				<ul>
+					<li>
+						<h2 class="highlight">
+							Kiker
+						</h2>
+						<h3>
+							Electric scooter sharing mobile app in Uzbekistan. <br>
+							I created low level backend for communication between mobile app, web admin panel and scooters network.
+							<br>
+							<a target="_blank" href="https://k-sharing.uz/">k-sharing.uz</a>
+						</h3>
+					</li>
+					<li>
+						<h2 class="highlight">
+							Culture Online Awards
+						</h2>
+						<h3>
+							International awards for the best cultural project in many nominations. <br>
+							I has developed web form for collecting applications from participants and jury panel.
+							<br>
+							<a target="_blank" href="https://culturaonline.ru/premiya/">culturaonline.ru</a>
+						</h3>
+					</li>
+					<li>
+						<h2 class="highlight">
+							Telegram bot constructor
+						</h2>
+						<h3>
+							Platform for fast creating of telegram bots with flexible custom message trajectories.
+							It is proprietary and currently being used by Russian Studio Sokol for commercial creation of bots for multiple companies
+							such as <a target="_blank" href="http://www.sberbank.ru">Sber</a>, <a target="_blank" href="https://nmg.ru/">NMG</a> and many others.
+						</h3>
+					</li>
+				</ul>
+			</div>
+			<div id="contacts" class="text">
+				<h1 align="center"  class='highlight'>Contact me</h1>
+				<input type="email" placeholder="Email" id="email">
+				<input type="email" placeholder="Name" id="name">
+				<textarea placeholder="Text" id="message"></textarea>
+				<span class="menuBtn" style="margin: 0 auto 0 auto; display: block; width: 40%; text-align: center" onclick="send_mail()">Send</span>
+				<br>
+				<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; font-size: larger;">
+					<div style="text-align: right;">
+						<a target="_blank" id="tg-link" href="https://t.me/CyberToad" style="color: #0088cc">
+							<i class="bi bi-telegram"></i> Telegram
+						</a>
+					</div>
+					<div id="gh-link" style="text-align: center;">
+						<a target="_blank" href="https://github.com/kibertod" style="color: white">
+							<i class="bi bi-github"></i> GitHub
+						</a>
+					</div>
+					<div>
+						<a target="_blank" href="https://discordapp.com/users/kibertod" style="color: #7289da">
+							<i class="bi bi-discord"></i> Discord
+						</a>
+					</div>
+				</div>
+				<h3 align="center"><i class="bi bi-envelope"></i> <a id="email" class='highlight' href="mailto:cyber704d@gmail.com">cyber704d@gmail.com</a></h3>
+			</div>
+			<div class="menuPanel">
+				<span class="menuBtn" id="projectsBtn" onclick="showText('projects')">My projects</span>
+				<span class="menuBtn" id="contactsBtn" onclick="showText('contacts')">Contact me</span>
+			</div>
+		</div>
+		<img id="gromborg" src="KIBERTOD.gif" alt="KIBERTOD">
+	</div>
+	<div id="alert">
+		<div style="width: 100%"><h2 style="float: right; padding: 5px;cursor: pointer;" onclick="closeAlert()">[X]</h2></div>
+		<h1 align="center" id="alert-message"></h1>
+	</div>
+	<script type="text/javascript" src="KIBERTOD.js"></script>
+	<script type="text/javascript" src="glitches.js"></script>
+</body>
+</html>
