@@ -14,14 +14,17 @@ async function updateComic() {
     let id = await getId(email);
     let data = await getImage(id);
 
-    let comic = document.querySelector("#comic");
-    let name = document.querySelector("#name");
-    let date = document.querySelector("#date");
+    let comicImg = document.querySelector("#comic");
+    let nameSpan = document.querySelector("#name");
+    let dateSpan = document.querySelector("#date");
 
-    comic.src = data.img;
-    comic.alt = data.alt;
-    name.textContent = data.safe_title;
-    date.textContent = `${data.day}.${data.month}.${data.year}`;
+    comicImg.src = data.img;
+    comicImg.alt = data.alt;
+    nameSpan.textContent = data.safe_title;
+
+    let date = new Date(Date.UTC(data.year, data.month, data.day));
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    dateSpan.textContent = date.toLocaleDateString(undefined, options);
 }
 
 document.querySelector("#trigger").addEventListener("click", updateComic);
