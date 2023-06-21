@@ -42,24 +42,28 @@ input::placeholder {
     padding: 30px;
 }
 
-.btn{
+.btn {
+    font-family: gotham, sans-serif;
+    background-color: black;
     margin-top: 10px;
-	padding: 10px;
-	border: 1px solid;
-	display: inline-block;
-	width: auto;
+    padding: 10px;
+    border: 1px solid;
+    color: white;
+    display: inline-block;
+    width: auto;
     cursor: pointer;
 }
-.btn:hover{
-	background-color: #FFF;
-	color: #000;
+
+.btn:hover {
+    background-color: #FFF;
+    color: #000;
 }
 
-#result{
+#result {
     padding: 10px;
     overflow-y: auto;
 }
 
-img{
+img {
     max-width: 100%;
 }

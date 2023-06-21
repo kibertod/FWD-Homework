@@ -1,12 +1,12 @@
 async function getId(email) {
     return await fetch("https://fwd.innopolis.university/api/hw2?email=" + email)
-    .then(result => result.text())
+        .then(result => result.text())
 }
 
 async function getImage(id) {
     return await fetch("https://fwd.innopolis.university/api/comic?id=" + id)
-    .then(result => result.json())
-    .then(data => data)
+        .then(result => result.json())
+        .then(data => data)
 }
 
 async function updateComic() {
