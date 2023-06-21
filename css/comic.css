@@ -1,7 +1,19 @@
 @font-face {
     font-family: gotham;
     src: url("../assets/font.ttf");
-}
+   }
+@font-face {
+    font-family: one;
+    src: url("../assets/1.ttf");
+   }
+@font-face {
+    font-family: two;
+    src: url("../assets/2.ttf");
+   }
+@font-face {
+    font-family: three;
+    src: url("../assets/3.ttf");
+   }
 
 body {
     font-family: gotham, sans-serif;
