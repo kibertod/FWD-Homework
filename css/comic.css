@@ -1,0 +1,65 @@
+@font-face {
+    font-family: gotham;
+    src: url("../assets/font.ttf");
+}
+
+body {
+    font-family: gotham, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    border: solid 1px white;
+    height: 90vh;
+    margin: 5vh 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.highlight {
+    color: #00AD00;
+    font-size: 15pt;
+}
+
+input {
+    padding: 5px;
+    font-size: 15pt;
+    width: 100%;
+    margin-top: 10px;
+    color: #FFF;
+    background-color: #000;
+    border: solid 1px;
+}
+
+input::placeholder {
+    color: #FFF;
+}
+
+.form {
+    padding: 30px;
+}
+
+.btn{
+    margin-top: 10px;
+	padding: 10px;
+	border: 1px solid;
+	display: inline-block;
+	width: auto;
+    cursor: pointer;
+}
+.btn:hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+#result{
+    padding: 10px;
+    overflow-y: auto;
+}
+
+img{
+    max-width: 100%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/comic.css">
+    <title>Comic</title>
+</head>
+
+<body>
+    <div id="content">
+        <div class="form">
+            <label for="email" class="highlight">Enter your Innopolis email</label><br>
+            <input type="text" value="t.garifullin@innopolis.university" placeholder="Email" name="email" id="email">
+            <div style="text-align: center;">
+                <div class="btn" id="trigger">
+                    Send
+                </div>
+            </div>
+        </div>
+        <div id="result">
+            <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                <div>
+                    <span class="highlight">Name: </span><span id="name"></span>
+                </div>
+                <div>
+                    <span class="highlight">Date: </span><span id="date"></span>
+                </div>
+            </div>
+            <br>
+            <img id="comic" src="" alt="">
+        </div>
+    </div>
+</body>
+
+<script src="js/comic.js"></script>
+
+</html>
